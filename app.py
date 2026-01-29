@@ -72,8 +72,6 @@ def login_page():
                     st.warning("Please enter username and password")
         
         st.markdown('</div>', unsafe_allow_html=True)
-        
-        st.info("📌 Default admin credentials: **Username:** admin | **Password:** admin123")
 
 def user_dashboard():
     """Display user dashboard"""
