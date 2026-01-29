@@ -1,0 +1,295 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Container */
+.main {
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* Headers */
+
+.section-header {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #667eea;
+}
+/* User Info Sidebar */
+.user-info {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Booking Cards */
+.booking-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #667eea;
+}
+
+.booking-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.booking-card h3 {
+    color: #2d3748;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.booking-card h4 {
+    color: #4a5568;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.booking-card p {
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.booking-details {
+    margin-top: 1rem;
+}
+
+.booking-meta {
+    color: #a0aec0;
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* Buttons */
+.stButton > button {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 0.6rem 1.2rem;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Forms */
+.stTextInput > div > div > input,
+.stTextArea > div > div > textarea,
+.stSelectbox > div > div > select,
+.stDateInput > div > div > input,
+.stTimeInput > div > div > input,
+.stNumberInput > div > div > input {
+    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+    transition: border-color 0.3s ease;
+}
+
+.stTextInput > div > div > input:focus,
+.stTextArea > div > div > textarea:focus,
+.stSelectbox > div > div > select:focus,
+.stDateInput > div > div > input:focus,
+.stTimeInput > div > div > input:focus,
+.stNumberInput > div > div > input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Sidebar */
+.css-1d391kg {
+    background: linear-gradient(180deg, #f7fafc 0%, #edf2f7 100%);
+}
+
+/* Radio Buttons */
+.stRadio > div {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Expander */
+.streamlit-expanderHeader {
+    background: #f7fafc;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+/* Info/Success/Warning/Error Messages */
+.stAlert {
+    border-radius: 10px;
+    border-left: 5px solid;
+    animation: slideIn 0.4s ease-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Container Styling */
+.stContainer {
+    animation: fadeIn 0.6s ease-in;
+}
+
+/* Form Container */
+.stForm {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Metric Cards */
+.stMetric {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Data Editor */
+.stDataFrame {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 1rem;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 8px 8px 0 0;
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .section-header {
+        font-size: 1.5rem;
+    }
+    .booking-card {
+        padding: 1rem;
+    }
+}
+
+/* Custom Classes for Status */
+.status-pending {
+    color: #d69e2e;
+    font-weight: 600;
+}
+
+.status-approved {
+    color: #38a169;
+    font-weight: 600;
+}
+
+.status-rejected {
+    color: #e53e3e;
+    font-weight: 600;
+}
+
+/* Table Styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:hover {
+    background: #f7fafc;
+}
+
+/* Loading Spinner */
+.stSpinner > div {
+    border-color: #667eea;
+}
